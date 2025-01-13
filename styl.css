@@ -1,0 +1,382 @@
+*{
+    padding:0;
+    margin:0;
+    
+    box-sizing: border-box;
+}
+
+.strona{
+    margin:auto;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+nav{
+    position: relative;
+    top:1vh;
+    background-color: aliceblue;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav li{
+    height: 4vh;
+}
+nav ul{width: 98%;
+    list-style:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: gray;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav li:last-child{
+    margin-left: auto;
+}
+.bok{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.bok li{
+    width: 100%;
+}
+.bok a{
+    width: 100%;
+}
+.ee{
+    color:black;
+}
+
+.ukryte{
+    display:none;
+}
+.widoczne{
+    display: flex;
+
+    animation: wiDoczne 2s ease forwards ;
+}
+
+.mejn{
+width: 100%;
+height: 7vh;
+background-color: antiquewhite;
+font-family: 'Gill Sans';
+color:black;
+text-align: center;
+font-size:large;
+position:relative;
+top:13px;
+border-radius: 30px;
+
+
+
+
+
+
+}
+.artykul{
+    width: 100%;
+    height: 69vh;
+    background-color: rgb(255, 232, 202);
+}
+.stopa{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(248, 224, 192);
+    font-family: 'Gill Sans';
+    color:black;
+text-align: center;
+font-size:large;
+}
+.x{
+    display: none;
+}
+
+
+
+
+@keyframes wiDoczne {
+
+    from {
+        opacity: 0;
+        font-weight: normal;
+    }
+    to {
+        opacity: 1;
+        font-weight: normal;
+    }
+
+}
+
+.tytul{
+    animation: tytul 4s ease forwards;
+}
+@keyframes tytul {
+    from {
+        border-radius: 0;
+    }
+    to{
+        transform:rotate(360deg);
+        border-radius: 30px;
+    }
+    
+}
+.kaka{
+    width: 30%;
+    position: absolute;
+    transform:translate(-50%, -50%) ;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid seashell;
+    border-radius: 20px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3) ;
+}
+.lakaka{
+    width: 100%;
+    display: flex;
+    animation: galeria 24s infinite;
+}
+@keyframes galeria {
+
+    0%{
+        transform:translateX(0);
+    }
+    12.5%{
+        transform:translateX(0);
+    }
+    
+    15%{
+        transform:translateX(-100%);
+    }
+    25%{
+        transform:translateX(-100%);
+    }
+
+
+    27.5%{
+        transform:translateX(-200%);
+    }
+    37.5%{
+        transform:translateX(-200%)
+    }
+
+    40%{
+        transform:translateX(-300%);
+    }
+
+    50%{
+        transform:translateX(-300%)
+    }
+
+    52.5%{
+        transform:translateX(-400%);
+    }
+
+    62.5%{
+        transform: translateX(-400%);
+    }
+
+    75%{
+        transform:translateX(-500%);
+    }
+
+    75%{
+        transform: translateX(-500%);
+    }
+    77.5%{
+        transform:translateX(-600%);
+    }
+    87.5%{
+        transform:translateX(-600%);
+    }
+    90%{
+        transform:translateX(-700%);
+    }
+    99.9999999999999999999999%{
+        transform:translateX(-700%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+   
+}
+.iimg{
+    width: 100%;
+}
+h1{
+    position: relative;
+    top:2%;
+    color:rgb(216, 158, 83);
+}
+.xd{
+  
+    position:relative;
+    top:2%;
+    width: 400px; height: 300px;
+    align-items: center;
+    text-align: center;
+}
+.xdd{
+    position:relative;
+    top:3%;
+    text-align: center;
+    align-items: center;
+    
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+
+
+
+
+
+
+.da{
+    position: relative
+    ;
+top:3%;}
+
+
+
+
+@media  screen and  (max-width: 1200px){
+    nav li {
+        height: 30px;
+       
+    }
+    nav a {
+        height: 80%;
+        padding: 0 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color:black
+    }
+
+    .tablette{
+        display: none;
+    }
+    
+
+    .kaka{
+
+        width: 45%;
+        position: absolute;
+        transform:translate(-50%, -50%) ;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        border: 20px solid seashell;
+        border-radius: 20px;
+        box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3) ;
+    }
+  
+     .poka{
+        display: flex;
+    }
+    .zniknij{
+        display: none;
+    }
+    }
+    
+@media screen and (max-width: 600px) {
+    .bokBardzo{
+        width: 100%;
+    }
+    nav a {
+        height: 70%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color:black;
+    }
+    .zniknij{
+        display: none;
+    }
+    .zniknijj{
+        display: none;
+    }
+.poka{
+    display: flex;
+    text-align: center;
+}
+.kaka{
+
+    width: 80%;
+    position: absolute;
+    transform:translate(-50%, -50%) ;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid seashell;
+    border-radius: 20px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3) ;
+}
+.mejn{
+    width: 100%;
+    height: 7vh;
+    background-color: antiquewhite;
+    font-family: 'Gill Sans';
+    color:black;
+    text-align: center;
+    font-size:large;
+    position:relative;
+    top:13px;
+    border-radius: 30px;
+    
+    
+    
+    
+    
+    
+    }
+    h1{
+        position: relative;
+        top:2%;
+        color:black;
+    }
+    
+
+}
+
